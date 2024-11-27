@@ -5,7 +5,19 @@
 }
 body{
     font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F4F6FF;
 }
+.section{
+    padding:2rem 0 1rem 0;
+    height:95vh;
+}
+
+.logo-img{
+    width: 4rem;
+    height: 3.5rem;
+}
+
+
 /* navigation menu */
 nav{
     display: flex;
@@ -20,14 +32,9 @@ nav{
     z-index: 1000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10); /* Bottom shadow */
 }
-.logo{
+nav>div{
     margin-left:1rem;
 }
-.logo img{
-    width: 4rem;
-    height: 3.5rem;
-}
-
 .nav-links{
     display: flex;
     list-style-type: none;
@@ -55,6 +62,13 @@ nav{
     text-decoration: none;
     color:black;
     font-size: 1rem;
+}
+.link-style.active{
+    background-color: #1f9af2;
+    font-size: larger;
+    padding:0.2rem 0.5rem;
+    box-sizing: border-box;
+    border-radius: 15%;
 }
 
 .menu-icon{
@@ -87,20 +101,16 @@ nav{
 }
 
 /* hero-section or home */
-.hero{
-    padding:1rem;
-    height:90vh;
-    background-color: #F4F6FF;
-}
-.container-hero{
+
+.card{
     text-align: center;
-    width:50%;
+    width:75%;
     margin-top:10rem;
     padding:1rem;
     margin-left:auto;
     margin-right: auto;
 }
-.container-hero h1{
+.card h1{
     margin-bottom:1rem;
     font-size: 3rem ;
 }
@@ -131,4 +141,75 @@ nav{
 .social-media i:hover{ 
     transition:transform 0.3s ease-in;
     transform:scale(1.5);
+}
+
+/* media queries for home */
+
+
+
+/* About section */
+#about{
+    overflow-y:scroll;
+}
+#about .card{
+    margin-top:0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#about h1{
+    margin-top:1rem;
+    font-size:2rem;
+}
+
+#about p{
+     text-align: justify;
+     line-height:1.5rem;
+}
+
+
+        /* skills section */
+.container{
+   width: 90%;
+   margin: 2rem auto 2rem auto;
+   text-align: center;
+}
+.container h1{
+    font-size: 2rem;
+}
+
+
+.container table{
+    width: 100%;
+    padding:1rem;
+    border-spacing: 0 2rem;
+}
+
+.list-grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items:center;
+    gap:30px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+
+}
+.box{
+    background-color: rgba(198, 231, 255,0.25);
+ }
+
+ul.list-grid{
+    justify-content: flex-start;
+}
+ul.list-grid :hover{
+     /* transition */
+     transition: transform 0.5s ease-in-out;
+     transform: scale(1.1);
+}
+.list-grid p{
+    margin-right: 1rem;
+}
+.list-grid img{
+    padding:5px 0 5px 0;
 }
