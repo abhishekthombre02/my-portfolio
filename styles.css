@@ -1,24 +1,59 @@
+                        /*global styles*/
 
+/*universal selector*/
 *{
     margin:0;
     padding:0;
 }
+
 body{
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #F4F6FF;
 }
+
+#home{
+    height: 95svh;
+}
+/* section class (global) */
 .section{
+    /* height: 95svh; */ 
     padding:2rem 0 1rem 0;
-    height:95vh;
 }
 
+/* style for all logo type images */
 .logo-img{
     width: 4rem;
     height: 3.5rem;
 }
 
+/* common style for all paragraph tags */
+p{
+    text-align: justify;
+    line-height: 1.5rem;
+}
 
-/* navigation menu */
+/* container class (global) */
+.container{
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+    padding:1rem;
+ }
+
+ .container h1{
+    font-size: 2rem;
+}
+
+/* card style (global) */
+.card{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 2%;
+}
+
+
+                        /* specific styles */
+
+    /* navigation menu */
 nav{
     display: flex;
     width: 100%;
@@ -102,7 +137,7 @@ nav>div{
 
 /* hero-section or home */
 
-.card{
+.hero-container{
     text-align: center;
     width:75%;
     margin-top:10rem;
@@ -110,12 +145,11 @@ nav>div{
     margin-left:auto;
     margin-right: auto;
 }
-.card h1{
+.hero-container h1{
     margin-bottom:1rem;
     font-size: 3rem ;
 }
 .designation{
-    
     display: block;
     width:100%;
      font-size: 3rem;
@@ -125,7 +159,6 @@ nav>div{
      overflow: hidden;
      white-space: nowrap;
      animation: typing 2s linear infinite;
-
 }
 .social-media{
     height: auto;
@@ -152,8 +185,9 @@ nav>div{
     overflow-y:scroll;
 }
 #about .card{
-    margin-top:0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin:0.3rem auto 0 auto;
+    width: 75%;
+    
 }
 
 #about h1{
@@ -161,27 +195,15 @@ nav>div{
     font-size:2rem;
 }
 
-#about p{
-     text-align: justify;
-     line-height:1.5rem;
-}
-
 
         /* skills section */
-.container{
-   width: 90%;
-   margin: 2rem auto 2rem auto;
-   text-align: center;
-}
-.container h1{
-    font-size: 2rem;
-}
 
 
 .container table{
     width: 100%;
     padding:1rem;
     border-spacing: 0 2rem;
+    box-sizing: border-box;
 }
 
 .list-grid{
@@ -212,4 +234,44 @@ ul.list-grid :hover{
 }
 .list-grid img{
     padding:5px 0 5px 0;
+}
+
+            /*services*/
+
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.flex-item{
+    flex:1;
+}
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap ;
+}
+
+            /* projects */
+
+#projects .flex-container-col{
+    position: relative;
+}
+#projects .flex-container-col p{
+    margin-bottom:1rem;
+}
+.float-link{
+     position: absolute;
+     left:1rem;
+     bottom:0.5rem;
+     background-color: rgb(42, 126, 223,0.7) ;
+     font-size: medium;
+     padding:0.2rem 0.5rem;
+     box-sizing: border-box;
+     border-radius: 10%;  
 }
