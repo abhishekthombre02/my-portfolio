@@ -11,26 +11,25 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
     <body>
-        
-            <nav>
-                 <div>
-                    <a href=""><img src="images/mylogo.png" alt="" title="Abhishek Thombre" class="logo-img"></a>
-                 </div>
-                 <ul class="nav-links">
+        <nav>   
+            <div>
+                <a href=""><img src="images/mylogo.png" alt="" title="Abhishek Thombre" class="logo-img"></a>
+            </div>
+            <ul class="nav-links">
                     <li><a href="#home" class="link-style active" >Home</a> </li>
                     <li><a href="#about" class="link-style">About</a> </li>
                     <li><a href="#skills" class="link-style">Skills</a> </li>
                     <li><a href="#services" class="link-style">Services</a> </li>
                     <li><a href="#projects" class="link-style">Projects</a> </li>
                     <li><a href="#contact" class="link-style">Contact</a></li>
-                 </ul>
-                 <div class="menu-icon">
+            </ul>
+            <div class="menu-icon">
                     <!-- You can use an icon font or an SVG -->
                     <span>&#9776;</span> <!-- Unicode for a hamburger menu -->
-                </div>
-            </nav>
-            <section id="home" class="section">
-                <div class="hero-container">
+            </div>
+        </nav>
+        <section id="home" class="section">
+            <div class="hero-container">
                     <h1>Hi! I am <span id="name">Abhishek</span></h1>
                     <div class="designation"> 
                         <span>Full-Stack Developer</span>
@@ -45,11 +44,11 @@
                         <abbr title="Twitter"><a href="" class="link-style "><i class="fa-brands fa-twitter"></i></a></abbr> 
                         <abbr title="Instagram"><a href="" class="link-style "><i class="fa-brands fa-instagram"></i></a></abbr>   
                     </div>
-                </div>
-            </section>
-            <hr></hr>
-            <section id="about" class="section">
-                    <div class="container card">
+            </div>
+        </section>
+        <hr></hr>
+        <section id="about" class="section">
+            <div class="container card">
                         <h1>About Me</h1>
                         <p>Hi, I’m Abhishek Thombre, a Full-Stack Developer, Software Engineer, and Digital Content Creator with a passion for building innovative and user-friendly solutions. I work on both the front end and back end of web development, which means I can create beautiful designs and make sure they work smoothly with strong and reliable systems behind the scenes.</p>
                         <br>
@@ -60,12 +59,12 @@
                         <p>Alongside my technical work, I’m also a Digital Content Creator. I enjoy sharing my knowledge and ideas through blogs, tutorials, and creative media. This helps me connect with others, inspire learners, and explain technology in simple and engaging ways. I believe in continuous growth and always strive to improve my skills, both in technology and in personal development. I draw inspiration from the leadership of Chhatrapati Shivaji Maharaj, also the hard work and discipline of Virat Kohli.</p>
                         <br>
                         <p> Let’s work together to create meaningful projects and solve real-world problems. I’m excited to collaborate and bring great ideas to life!</p>
-                    </div>
-            </section>
+            </div>
+        </section>
             
-            <hr>
+        <hr>
 
-            <section id="skills" class="section">
+        <section id="skills" class="section">
                     <div class="container">
                         <h1>Skills</h1>
                         <table>
@@ -169,8 +168,8 @@
                             </tbody>
                         </table>  
                     </div>
-            </section>
-            <hr>
+        </section>
+        <hr>
                 <section id="services" class="section">
                     <div class="container">
                         <h1>Services</h1>
@@ -193,9 +192,9 @@
                         </div>
                     </div>
                         
-                </section>
-                <hr>
-            <section id="projects" class="section">
+        </section>
+        <hr>
+        <section id="projects" class="section">
                 <div class="container">
                     <h1>Projects</h1>
                     <div class="flex-container-row">
@@ -225,8 +224,29 @@
             <hr>
             <section id="contact" class="section">
                 <div class="container">
-                    <h1>Contacts</h1>
+                    <h1>Contact</h1>
+                    <form action="https://httpbin.org/get" method="get">
+                       <fieldset>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name">
+                       </fieldset>  
+                       <fieldset>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email">
+                       </fieldset>  
+                       <fieldset>
+                        <label>Message: </label>
+                        <textarea name="message" id="message" cols="53" rows="5" placeholder="type your message here" ></textarea>
+                       </fieldset>
+                       <div class="btn"><button>Submit</button></div>
+                       <div class="mid">
+                        <p >or</p>
+                       <a href="mailto:abhishekthombre25@gmail.com" class="mid">send mail directly</a>
+                       </div>
+                       
+                    </form>
                 </div>
-            </section>
+        </section>
+        <footer><p>&copy; Website made by Abhishek Thombre</p></footer>
     </body>
 </html>
